@@ -5,6 +5,7 @@ Type in `jasmine` (no quote marks) when asked for "test".
     I personally installed it both globally and locally:
     `npm install jasmine --save-dev` (adds it to './node_modules' and to the devDependencies in './package.json')
     `npm install -g jasmine`
+- Initialize jasmine: `jasmine init`
 - Install nyc (command line client for Istanbul test coverage tool): `npm install --save-dev`.
 - Install a pretty reporter for jasmine: `npm install jasmine-console-reporter --save-dev`
     - It displays all your test descriptions and gives you a summary. Does raise weird npm errors on failures though, on top of the actual failures.
