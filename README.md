@@ -11,7 +11,7 @@ Type in `jasmine` (no quote marks) when asked for "test".
     - Feel free to skip this and delete the "reporter" part for the test script below.
 - Edit the scripts within package.json:
 
-```json
+```javascript
 "scripts": {
 "test": "jasmine --reporter=jasmine-console-reporter", // only write "jasmine" as a value if you skipped the previous step.
 "coverage": "nyc -x 'spec/' npm run test" // this runs your test suite and adds code coverage report(excluding your spec files).
