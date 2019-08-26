@@ -8,7 +8,7 @@ Type in `jasmine` (no quote marks) when asked for "test".
 - Initialize jasmine: `jasmine init`
 - Install nyc (command line client for Istanbul test coverage tool): `npm install --save-dev`.
 - Install a pretty reporter for jasmine: `npm install jasmine-console-reporter --save-dev`
-    - It displays all your test descriptions and gives you a summary. Does raise weird npm errors on failures though, on top of the actual failures.
+    - It displays all your test descriptions and gives you a summary.
     - Feel free to skip this and delete the "reporter" part for the test script below.
 - Edit the scripts within package.json:
 
@@ -18,8 +18,8 @@ Type in `jasmine` (no quote marks) when asked for "test".
 "coverage": "nyc -x 'spec/' npm run test" // this runs your test suite and adds code coverage report(excluding your spec files).
 }
 ```
-- Run only your tests with `npm test` (no coverage).
-- Check coverage with `npm run coverage`.
+- Run only your tests with `npm test` (no coverage). Do this when some tests are failing.
+- Check coverage with `npm run coverage`. Only when your tests are passing, raises npm errors if you have failures.
 
 *N.B : Writing tests with the node version of jasmine is a bit different!*
 
